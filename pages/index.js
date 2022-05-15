@@ -1,7 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
+import { Header } from "../components/Header";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello World! 🌎 </h1>;
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <div className="mt-10">{/* <Trending /> */}</div>
+      <div className="mt-20">{/* <CMTable /> */}</div>
+    </div>
+  );
 }
